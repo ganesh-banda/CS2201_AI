@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple CAPTCHA</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg,#6a11cb,#2575fc);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            margin:0;
+        }
+
+        .container{
+            background:white;
+            padding:40px;
+            border-radius:10px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+            width:300px;
+        }
+
+        h2{
+            margin-bottom:20px;
+        }
+
+        .captcha-box{
+            font-size:28px;
+            letter-spacing:5px;
+            font-weight:bold;
+            background:#f1f1f1;
+            padding:10px;
+            border-radius:5px;
+            margin-bottom:15px;
+        }
+
+        input{
+            width:80%;
+            padding:10px;
+            border-radius:5px;
+            border:1px solid #ccc;
+            font-size:16px;
+        }
+
+        button{
+            margin-top:15px;
+            padding:10px 20px;
+            border:none;
+            background:#2575fc;
+            color:white;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#1b5fd6;
+        }
+
+        .message{
+            margin-top:15px;
+            font-weight:bold;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>CAPTCHA Verification</h2>
+
+<form method="POST">
+
+<div class="captcha-box">
+{{ captcha }}
+</div>
+
+<input type="text" name="captcha" placeholder="Enter CAPTCHA" required>
+
+<br>
+
+<button type="submit">Verify</button>
+
+</form>
+
+<div class="message">
+{{ message }}
+</div>
+
+</div>
+
+</body>
+</html>
