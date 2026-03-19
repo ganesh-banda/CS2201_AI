@@ -1,0 +1,17 @@
+Origin,Destination,Distance
+Delhi,Agra,233
+Delhi,Jaipur,281
+Agra,Kanpur,285
+Kanpur,Lucknow,90
+Jaipur,Udaipur,393
+Jaipur,Ahmedabad,657
+Ahmedabad,Mumbai,526
+Udaipur,Mumbai,760
+Lucknow,Varanasi,320
+Varanasi,Patna,260
+Patna,Kolkata,580
+Mumbai,Pune,150
+Pune,Hyderabad,560
+Hyderabad,Bangalore,570
+Bangalore,Chennai,350
+Chennai,Kolkata,1670
