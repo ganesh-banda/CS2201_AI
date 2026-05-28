@@ -40,7 +40,7 @@ if __name__ == "__main__":
     carries = ['X1', 'X2', 'X3']
     variables: List[str] = letters + carries
 
-    domains: Dict[str, List[int]] = {}
+    domains: Dict[str, List[int]] = {}     
     for letter in letters:
         domains[letter] = list(range(10))
 
